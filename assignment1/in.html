@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+    <style type="text/css">
+        body{
+            background-color: blanchedalmond;
+            font-size: medium;
+            color:black;
+            margin: 100px;
+        }
+        #message{
+            display:block;
+            font-style: italic;
+            background-color: pink;
+            color: crimson;
+        }
+        </style>
+<script>
+function odd_even(){
+var no;
+no=document.getElementById("no_input").value;
+if(isNaN(no))
+{
+    document.getElementById("message").innerHTML="enter a number";
+    return;
+}
+if(no%2==0)
+{
+    document.getElementById("message").innerHTML="even";
+}
+else
+{
+    document.getElementById("message").innerHTML="odd";
+}
+}
+</script>
+</head>
+<body>
+    <h1>ODD AND EVEN CHECKER</h1>
+Enter Any Number:<input type="text" name="number" id="no_input"><span id="message"></span><br />
+<button onclick="odd_even()">Click me</button>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form page</title>
+    <style>
+        body{
+            background-size: 200px 200px;
+        }
+        fieldset{
+            margin: 0px auto;
+            padding: 0px;
+            
+        }
+        .labels{
+            width: 40%;
+            margin: 5%;
+            float: left;
+            height: 10vh;
+            font-size: large;
+        }
+        .inputs{
+            margin: 5%;
+            width: 30%;
+            height: 80vh;
+            display: block;
+            font-size: 12px;
+            float: left;
+        }
+        .inputs input{
+            widows: 100%;
+            line-height: 2em;
+            padding: 1em;
+            margin-top: 1.2em;
+            background-color: coral;
+        }
+        input{
+            background-color: lightgreen;
+        }
+        ::placeholder{
+            color:black;
+        }
+        select{
+            padding: 1em;
+            margin-top: 0.8em;
+        }
+        #submit{
+            width: 15%;
+            padding: 1em;
+            margin-left: 3%;
+            margin-bottom: 5%;
+            margin-top: -5%;
+            font-size: 20px;
+            position:relative;
+        }
+    </style>
+</head>
+<body >
+    <div class="row">
+    <div class="col-sm-12">
+    <h1> THE DETAILS PAGE </h1>
+    <div class="col-sm-6"> 
+    <form  method="get" style="background-image:url('images/dog.jpeg'); background-size: 100% 100%;">
+    <fieldset>
+        <legend>Details</legend>
+        <h2 style="text-align:center">Lands to sell Form</h2>
+        <div class="labels">
+        <b><p>Name:</p><br>
+            <p>Date &amp; Time:</p><br>
+            <p>Cost:</p><br>
+            <p>Gender:</p><br>
+            <p>City:</p><br>
+            <p>Email:</p><br>
+            <p>Area Details:</p></b>
+        </div>
+        <div class="inputs">
+            <input type="text" name="name" placeholder="Name" /><br>
+            <input type="date" placeholder="Date" />
+            <input type="time" placeholder="Time" /><br>
+            <input type="number" placeholder="Price" /><br>
+            Male:<input type="radio" name="gender" value="Male" />
+            Female:<input type="radio" name="gender" value="Female" /><br>
+            <select where="city" style="background-color:coral;">
+                <option>banglore</option>
+                <option>delhi</option>
+                <option>chennai</option>
+                <option>hyderabad</option>
+            </select><br>
+            <input type="email"  placeholder="Mail" /><br>
+            <input type="textarea" placeholder="Details" /><br>
+        </div>
+        <input id="submit" type="submit" value="Submit"/>
+    </fieldset>
+    </form>
+</div>
+</div>
+</div>
+</div>
+</body >
+</html>
